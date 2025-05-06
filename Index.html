@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deal or No Deal</title>
+    <style>
+        .game-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .box {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background: #gold;
+            cursor: pointer;
+            line-height: 80px;
+            font-weight: bold;
+        }
+        .banker-offer {
+            margin: 20px;
+            padding: 10px;
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>DEAL OR NO DEAL</h1>
+        <div id="boxes"></div>
+        <div class="banker-offer" id="offer">Banker's Offer: $0</div>
+        <button onclick="deal()">DEAL</button>
+        <button onclick="noDeal()">NO DEAL</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
